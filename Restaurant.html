@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ur">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.jpg" sizes="32x32" type="image/jpg" />
+    <link rel="icon" href="images/logo.jpg" sizes="192x192" type="image/jpg" />
+    <link rel="apple-touch-icon" href="images/logo.jpg" />
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/jpg" />
+
+    <!-- Primary Meta Tags -->
+    <title>Dine-In Order & Menu | Zainab Restaurant</title>
+    <meta name="title" content="Dine-In Order & Menu | Zainab Restaurant" />
+    <meta name="description" content="Dine-in menu and instant table ordering for Zainab Restaurant." />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="Restaurant.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <div class="brand-area">
+            <img src="images/logo.jpg" alt="Zainab Restaurant Logo" class="logo" />
+            <div class="cafename">Zainab Restaurant</div>
+        </div>
+
+        <nav class="navbar" id="navbar-links">
+            <!-- Dynamic Navigation Links JS -->
+        </nav>
+
+        <div class="header-right-actions">
+            <a href="#cust-name" class="mobile-cart-btn">
+                📦 <span id="mobile-cart-count">0</span>
+            </a>
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu">☰</button>
+        </div>
+    </header>
+
+    <div class="menu-backdrop" id="menu-backdrop"></div>
+
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <!-- Mobile Links JS -->
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <main class="main-container">
+        <!-- LEFT CONTENT: MENU SECTIONS -->
+        <div class="menu-sections" id="menu-sections">
+            <!-- Dishes and Deals JS -->
+        </div>
+
+        <!-- RIGHT ASIDE: CART CONTAINER -->
+        <aside class="rightaside">
+            <div class="cart-header">
+                <span class="cart-header-title">🛒 Dine-In Order</span>
+            </div>
+
+            <div class="form-section">
+                <div class="input-group">
+                    <label class="form-label" for="cust-name">👤 Customer Details</label>
+                    <input type="text" id="cust-name" class="form-input" placeholder="Enter Your Name..." required />
+                </div>
+
+                <div class="input-group">
+                    <label class="form-label" for="table-no">🪑 Table Selection</label>
+                    <input type="text" id="table-no" class="form-input" placeholder="Table Number (e.g. Table 5)..."
+                        required />
+                </div>
+
+                <div class="input-group">
+                    <label class="form-label" for="payment-method">💳 Payment Method</label>
+                    <select id="payment-method" class="form-select">
+                        <option value="Cash">💵 Cash</option>
+                        <option value="Card">💳 Credit / Debit Card</option>
+                        <option value="Easypaisa">📱 Easypaisa</option>
+                        <option value="JazzCash">📱 JazzCash</option>
+                    </select>
+                </div>
+
+                <div class="cart-items-wrapper">
+                    <ul id="cart-items">
+                        <!-- Cart items rendered here dynamically -->
+                    </ul>
+                </div>
+
+                <div class="cart-summary-box" id="total-bill">
+                    <!-- Dynamic Cart Total & Tax Breakdown rendered by JS -->
+                </div>
+
+                <button class="order-btn" id="send-order-btn">Place Dine-In Order</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>ZAINAB RESTAURANT</h3>
+                <p class="tagline">Authentic Taste & Premium Dine-In Experience</p>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>📍 Location</h4>
+                    <p>Zainab Restaurant, Main Branch</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>📞 Contact Us</h4>
+                    <p><a href="tel:+923001212790">+92 300 1212790</a></p>
+                    <p><a href="mailto:info@zainabrestaurant.com">info@zainabrestaurant.com</a></p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>✨ Quick Links</h4>
+                    <div class="footer-socials">
+                        <a href="#" target="_blank">🗺️ Get Directions</a>
+                        <a href="#" target="_blank">🎵 TikTok</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zainab Restaurant. All rights reserved.</p>
+                <p class="credits">Designed by: <span>S.H Production</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Restaurant.js"></script>
+</body>
+
+</html>
